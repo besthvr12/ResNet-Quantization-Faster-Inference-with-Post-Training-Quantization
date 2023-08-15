@@ -1,38 +1,86 @@
 # ResNet-Quantization-Faster-Inference-with-Post-Training-Quantization
-## PyTorch Quantization Showcase
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Styles for headers */
+  h1, h2, h3 {
+    color: #333366;
+    border-bottom: 2px solid #333366;
+    padding-bottom: 5px;
+    margin-top: 20px;
+  }
 
-Welcome to the PyTorch Quantization Showcase notebook! Here, you're in for an eye-opening experience as we delve into the realm of quantization and witness the remarkable transformations it can bring to the table. We're excited to unveil how quantization in PyTorch can orchestrate a symphony of benefits: from a substantial reduction in model size to a turbocharged boost in speed.
+  /* Styles for code blocks */
+  code {
+    background-color: #f5f5f5;
+    padding: 2px;
+    font-family: 'Courier New', monospace;
+  }
 
-🚀 **Accelerated Performance:** While we're all about speed, it's essential to bear in mind that quantization's current companion is none other than CPUs. This means we'll be dancing to the tune of GPUs / CUDA for training, while gracefully transitioning to the rhythm of CPUs for our testing extravaganza.
+  /* Styles for info boxes */
+  .info-box {
+    background-color: #f0f5fa;
+    border-left: 4px solid #333366;
+    padding: 10px;
+    margin: 20px 0;
+  }
 
-🧠 **Navigating Complexity:** The journey doesn't come without its twists and turns. In the intricate world of complex datasets, we might encounter a phenomenon worth our attention: a potential dip in accuracy. But, fear not! We've got a trick up our sleeves. Brace yourselves for the entrance of a quantization configuration that wields the power of accuracy restoration.
+  /* Styles for buttons */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #333366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
 
-🔮 **Unveiling the Magic Line:** To ignite this accuracy renaissance, we'll wield the mystical incantation:
+  /* Style for images */
+  .project-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
+</head>
+<body>
 
-```python
-model.qconfig = torch.quantization.get_default_qconfig('fbgemm')
+<h1 align="center">Quantized ResNet: Accelerating Inference with Post-Training Quantization</h1>
 
+<p align="center">
+  Welcome to the Quantized ResNet project! Witness the magic of reducing model size and boosting inference speed through post-training quantization in PyTorch.
+</p>
 
-Absolutely, here's the enhanced text formatted for a stylish appearance in a GitHub README:
+<div class="info-box">
+  <p>🚀 <strong>Fast Inference:</strong> Experience accelerated inference with our optimized ResNet model.</p>
+  <p>🧠 <strong>Preserving Efficiency:</strong> Discover the balance between efficiency and performance.</p>
+  <p>🔍 <strong>Accuracy and Complexity:</strong> Uncover strategies to maintain accuracy.</p>
+</div>
 
-markdown
-Copy code
-## PyTorch Quantization Showcase
+<h2>Getting Started</h2>
 
-Welcome to the PyTorch Quantization Showcase notebook! Here, you're in for an eye-opening experience as we delve into the realm of quantization and witness the remarkable transformations it can bring to the table. We're excited to unveil how quantization in PyTorch can orchestrate a symphony of benefits: from a substantial reduction in model size to a turbocharged boost in speed.
-
-🚀 **Accelerated Performance:** While we're all about speed, it's essential to bear in mind that quantization's current companion is none other than CPUs. This means we'll be dancing to the tune of GPUs / CUDA for training, while gracefully transitioning to the rhythm of CPUs for our testing extravaganza.
-
-🧠 **Navigating Complexity:** The journey doesn't come without its twists and turns. In the intricate world of complex datasets, we might encounter a phenomenon worth our attention: a potential dip in accuracy. But, fear not! We've got a trick up our sleeves. Brace yourselves for the entrance of a quantization configuration that wields the power of accuracy restoration.
-
-🔮 **Unveiling the Magic Line:** To ignite this accuracy renaissance, we'll wield the mystical incantation:
-
-```python
-model.qconfig = torch.quantization.get_default_qconfig('fbgemm')
-Prepare to witness a transformation that bolsters accuracy while preserving efficiency.
-
-🎭 A Symphony of Strategies: As we navigate the quantization terrain, we'll embark on a replication journey. This time, we'll traverse the landscape of x86 architectures. Brace yourselves for the orchestration of strategies, including:
-
-Quantization at a per-channel level for weight finesse.
-The ingenious adoption of a histogram observer, an observer that captures activation histograms, paving the way for optimal quantization parameter selection.
-The stage is set, the strategies are poised, and the spotlight is yours to bask in the radiance of quantization's brilliance!
+```bash
+git clone https://github.com/yourusername/quantized-resnet.git
+cd quantized-resnet
+pip install -r requirements.txt
+<h2>Key Insights</h2>
+<p>Discover the transformative effects of different quantization configurations.</p>
+<p>Witness the enchantment of quantization's "magic line" as we rekindle accuracy.</p>
+<p>Uncover the artistry behind preserving accuracy while quantizing weights on a per-channel basis and employing a histogram observer.</p>
+<h2>Contributions</h2>
+<p>We welcome contributions from the community! Feel free to submit issues, pull requests, or ideas in the <a href="https://github.com/yourusername/quantized-resnet/issues">Issues</a> section.</p>
+<h2>License</h2>
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+<div align="center">
+  <a href="#" class="button">Try It Out</a>
+</div>
+<p align="center">
+  <img src="project-screenshot.png" alt="Project Screenshot" class="project-image">
+</p>
+</body>
+</html>
+```
